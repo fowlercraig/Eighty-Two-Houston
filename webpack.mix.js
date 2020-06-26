@@ -26,6 +26,10 @@ mix.postCss('resources/assets/styles/app.css', 'dist/styles', [
   require('precss')(),
   require('postcss-purgecss-laravel')({
     enabled: true,
+    extend: {
+         content: [path.join(__dirname, '/*.php')],
+         whitelistPatterns: [/hljs/],
+     },
   }),
 ]);
 
