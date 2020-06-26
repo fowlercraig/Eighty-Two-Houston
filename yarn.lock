@@ -7339,6 +7339,13 @@ postcss-pseudo-class-any-link@^6.0.0:
     postcss "^7.0.2"
     postcss-selector-parser "^5.0.0-rc.3"
 
+postcss-purgecss-laravel@^1.0.0:
+  version "1.0.0"
+  resolved "https://registry.yarnpkg.com/postcss-purgecss-laravel/-/postcss-purgecss-laravel-1.0.0.tgz#088d6e3d156747d815f8da0945241bb8fbc7afdf"
+  integrity sha512-sslKLd+gp0ODPx8xTrYYLQ6j72POfZyqlgYXxOaumPE8ZrcdeE5WPMpYkmoaVJicNLyDc+92J7UcDApE+38QMw==
+  dependencies:
+    "@fullhuman/postcss-purgecss" "^2.1.2"
+
 postcss-reduce-initial@^4.0.3:
   version "4.0.3"
   resolved "https://registry.yarnpkg.com/postcss-reduce-initial/-/postcss-reduce-initial-4.0.3.tgz#7fd42ebea5e9c814609639e2c2e84ae270ba48df"

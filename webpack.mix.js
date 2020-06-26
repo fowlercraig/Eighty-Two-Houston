@@ -1,6 +1,6 @@
 const mix = require('laravel-mix');
 require('@tinypixelco/laravel-mix-wp-blocks');
-require('laravel-mix-purgecss');
+//require('laravel-mix-purgecss');
 require('laravel-mix-copy-watched');
 require('tailwindcss');
 require('autoprefixer');
@@ -24,9 +24,11 @@ mix.postCss('resources/assets/styles/app.css', 'dist/styles', [
   require('postcss-import')(),
   require('tailwindcss')('./tailwind.config.js'),
   require('precss')(),
-]).purgeCss({
-  content: [path.join(__dirname, 'resources/**/*.php')],
-});
+  require('postcss-purgecss-laravel')({
+    enabled: true,
+  }),
+]);
+
 
 mix.js('resources/assets/scripts/app.js', 'scripts')
    .js('resources/assets/scripts/customizer.js', 'scripts')
