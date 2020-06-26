@@ -25,10 +25,9 @@ mix.postCss('resources/assets/styles/app.css', 'dist/styles', [
   require('tailwindcss')('./tailwind.config.js'),
   require('precss')(),
   require('postcss-purgecss-laravel')({
-    enabled: true,
     extend: {
-         content: [path.join(__dirname, '/*.php')],
-         whitelistPatterns: [/hljs/],
+      content: [path.join(__dirname, '/*.php')],
+      whitelistPatterns: [/hljs/],
      },
   }),
 ]);
