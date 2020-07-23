@@ -6,6 +6,6 @@
     </a>
   </h1>
   <div class="absolute inset-0 overflow-hidden opacity-25">
-    <img class="w-full h-full object-cover" src="@asset('images/RB_WAG_82-001_crop-1280x720.jpg')">
+    <img class="w-full h-full object-cover" src="@asset('images/82_houston_teaser_v003.jpg')">
   </div>
 </header>
