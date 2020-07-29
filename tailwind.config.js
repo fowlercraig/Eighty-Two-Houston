@@ -90,10 +90,14 @@ module.exports = {
     translate: ['responsive', 'hover', 'focus', 'group-hover'],
     border: ['responsive', 'hover', 'focus', 'group-hover'],
   },
-  purge: [
-    //'./src/**/*.html',
-    //'./src/**/*.php',
-  ],
+  purge: {
+    enabled: true,
+    whitelist: ['bg-red-500', 'px-4'],
+    content: [
+      './resources/**/*.php',
+      '*.php',
+    ],
+  },
   plugins: [
     require('@tailwindcss/typography'),
     //require('tailwindcss-gradients'),

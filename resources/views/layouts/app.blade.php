@@ -1,6 +1,6 @@
 @include('partials.header')
 
-<div class="">
+<div class="font-sans m-0 bg-black text-gray-400 font-sans">
   <main class="main">
     @yield('content')
   </main>

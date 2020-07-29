@@ -2,7 +2,9 @@
 
 @tailwind components;
 
+/* Start purging... */
 @tailwind utilities;
+/* Stop purging. */
 
 // /** Config */
 // @import 'config/variables';
