@@ -1,7 +1,9 @@
 const mix = require('laravel-mix');
 require('@tinypixelco/laravel-mix-wp-blocks');
-require('laravel-mix-purgecss');
+//require('laravel-mix-purgecss');
 require('laravel-mix-copy-watched');
+require('tailwindcss');
+require('autoprefixer');
 
 /*
  |--------------------------------------------------------------------------
@@ -14,15 +16,22 @@ require('laravel-mix-copy-watched');
  |
  */
 
+
 mix.setPublicPath('./dist')
    .browserSync('eightytwohouston.dev.cc');
 
-mix.sass('resources/assets/styles/app.scss', 'styles')
-   .sass('resources/assets/styles/editor.scss', 'styles')
-   .purgeCss({
-     whitelist: require('purgecss-with-wordpress').whitelist,
-     whitelistPatterns: require('purgecss-with-wordpress').whitelistPatterns,
-   });
+mix.postCss('resources/assets/styles/app.css', 'dist/styles', [
+  require('postcss-import')(),
+  require('tailwindcss')('./tailwind.config.js'),
+  require('precss')(),
+  require('postcss-purgecss-laravel')({
+    extend: {
+      content: [path.join(__dirname, '/*.php')],
+      whitelistPatterns: [/hljs/],
+     },
+  }),
+]);
+
 
 mix.js('resources/assets/scripts/app.js', 'scripts')
    .js('resources/assets/scripts/customizer.js', 'scripts')
@@ -38,9 +47,6 @@ mix.autoload({
 
 mix.options({
   processCssUrls: false,
-  postCss: [
-    require('tailwindcss')('./tailwind.config.js'),
-  ]
 });
 
 mix.sourceMaps(false, 'source-map')

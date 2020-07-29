@@ -91,8 +91,8 @@ module.exports = {
     border: ['responsive', 'hover', 'focus', 'group-hover'],
   },
   purge: [
-    './src/**/*.html',
-    './src/**/*.php',
+    //'./src/**/*.html',
+    //'./src/**/*.php',
   ],
   plugins: [
     require('@tailwindcss/typography'),
