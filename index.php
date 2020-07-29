@@ -7,7 +7,7 @@
     <?php wp_head(); ?>
   </head>
 
-  <body <?php body_class('m-0'); ?>>
+  <body <?php body_class('bg-black text-gray-400'); ?>>
     <?php wp_body_open(); ?>
     <?php do_action('get_header'); ?>
 
