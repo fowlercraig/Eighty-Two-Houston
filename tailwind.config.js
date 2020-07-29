@@ -91,15 +91,15 @@ module.exports = {
     border: ['responsive', 'hover', 'focus', 'group-hover'],
   },
   purge: {
-    enabled: true,
-    whitelist: ['bg-red-500', 'px-4'],
+    enabled: false,
+    //whitelist: ['bg-red-500', 'px-4'],
     content: [
       './resources/**/*.php',
-      '*.php',
     ],
   },
   plugins: [
     require('@tailwindcss/typography'),
-    //require('tailwindcss-gradients'),
+    require('@tailwindcss/ui'),
+    require('tailwindcss-gradients'),
   ]
 }

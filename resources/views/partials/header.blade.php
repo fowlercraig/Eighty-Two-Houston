@@ -1,5 +1,5 @@
 @if(is_front_page())
-<header role="banner" class="banner absolute inset-x-0 text-white">
+<header role="banner" class="banner absolute inset-x-0 text-white z-50">
 @else
 <header role="banner" class="banner relative inset-x-0 text-white bg-black">
 @endif
