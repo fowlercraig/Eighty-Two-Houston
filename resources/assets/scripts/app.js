@@ -2,7 +2,9 @@
  * External Dependencies
  */
 import 'jquery';
-import 'bootstrap';
+const feather = require('feather-icons')
+feather.replace()
+//import 'bootstrap';
 
 $(document).ready(() => {
   // console.log('Hello world');

@@ -50,12 +50,14 @@
     "@tailwindcss/typography": "^0.2.0",
     "@tailwindcss/ui": "^0.4.0",
     "bootstrap": "^4.5.0",
+    "feather-icons": "^4.28.0",
     "jquery": "^3.5.0",
     "popper.js": "^1.16.1",
     "postcss-css-variables": "^0.17.0",
     "postcss-easy-import": "^3.0.0",
     "postcss-import": "^12.0.1",
     "precss": "^4.0.0",
+    "rellax": "^1.12.1",
     "tailwindcss": "^1.5.1",
     "tailwindcss-gradients": "^3.0.0"
   }

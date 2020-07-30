@@ -10,7 +10,7 @@
         <img class="w-16 sm:w-20 block" src="@asset('images/82logo.svg')">
       </a>
       @if (is_page() && !is_front_page())
-      <span class="text-3xl text-gray-700 font-light leading-7 ml-3">| @php the_title() @endphp</span>
+      <span class="text-3xl text-gray-700 font-light leading-7 ml-3 tracking-tight">| @php the_title() @endphp</span>
       @endif
     </h1>
     <div class="hidden md:block">
@@ -23,14 +23,13 @@
           ]) !!}
         @endif
       </nav>
-      <nav class="primary">
-        @if (has_nav_menu('primary_navigation'))
-          {!! wp_nav_menu([
-            'theme_location'  => 'primary_navigation', 
-            'menu_class'      => 'nav flex justify-end space-x-2 font-bold tracking-tight text-sm pt-px text-white-50', 
-            'echo'            => false
-          ]) !!}
-        @endif
+      <nav class="secondary">
+        <ul class="flex space-x-1 items-center justify-end font-bold tracking-tight text-sm pt-1 text-white-50">
+          <li><a href="//www.facebook.com/eightytwola/"><span class="sr-only">Facebook</span><i height="18" data-feather="facebook"></i></a></li>
+          <li><a href="//www.instagram.com/EightyTwoLA/"><span class="sr-only">Instagram</span><i height="18" data-feather="instagram"></i></a></li>
+          <li><a href="//twitter.com/EightyTwoLA"><span class="sr-only">Twitter</span><i height="18" data-feather="twitter"></i></a></li>
+          <li><a href="/private-events">Private Events</a></li>
+        </ul>
       </nav>
     </div>
   </div>
