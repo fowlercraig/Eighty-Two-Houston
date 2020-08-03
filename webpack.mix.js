@@ -14,14 +14,16 @@ require('laravel-mix-copy-watched');
  |
  */
 
+const whitelistPatterns = require('purgecss-with-wordpress').whitelistPatterns;
+
 mix.setPublicPath('./dist')
-   .browserSync('eightytwohouston.dev.cc');
+   .browserSync('madebyhowler.dev.cc');
 
 mix.sass('resources/assets/styles/app.scss', 'styles')
    .sass('resources/assets/styles/editor.scss', 'styles')
    .purgeCss({
      whitelist: require('purgecss-with-wordpress').whitelist,
-     whitelistPatterns: require('purgecss-with-wordpress').whitelistPatterns,
+     whitelistPatterns: [/^(is-|has-|will-|js-|fs-|feather-|word-|aos-|wp-|aspect-|embed-|alm-)/, whitelistPatterns ],
    });
 
 mix.js('resources/assets/scripts/app.js', 'scripts')
