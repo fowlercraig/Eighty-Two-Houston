@@ -7,10 +7,12 @@
 @foreach($sections as $section)
 
   <section class="">
-    <div class="header-sm lg:h-header-xl relative">
+    <div class="header-sm lg:h-header-xl relative overflow-hidden">
       <div class="absolute inset-0 bg-gradient-t-black-75 z-10"></div>
-      @php $image = $section['hero_image']; $size = 'large'; @endphp
-      @php echo wp_get_attachment_image( $image, $size, '', array( 'class' => 'w-full h-full object-cover object-center' ) ) @endphp
+      <div class="rellax">
+        @php $image = $section['hero_image']; $size = 'large'; @endphp
+        @php echo wp_get_attachment_image( $image, $size, '', array( 'class' => 'w-full h-full object-cover object-center' ) ) @endphp
+      </div>
     </div>
     <div class="container lg:-mt-12 relative space-y-6 z-20">
       <div class="bg-black-75 leading-13 px-4 py-3 -ml-4 inline-flex">
