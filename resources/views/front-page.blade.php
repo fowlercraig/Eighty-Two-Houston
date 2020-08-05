@@ -9,7 +9,7 @@
   <section class="">
     <div class="header-sm lg:h-header-xl relative overflow-hidden">
       <div class="absolute inset-0 bg-gradient-t-black-75 z-10"></div>
-      <div class="rellax">
+      <div class="relative">
         @php $image = $section['hero_image']; $size = 'large'; @endphp
         @php echo wp_get_attachment_image( $image, $size, '', array( 'class' => 'w-full h-full object-cover object-center' ) ) @endphp
       </div>
