@@ -7,6 +7,7 @@ feather.replace()
 import Rellax from 'rellax';
 import Headroom from "headroom.js";
 import { tns } from 'tiny-slider/src/tiny-slider'
+var Isotope = require('isotope-layout');
 
 var myElement = document.querySelector("header");
 var headroom  = new Headroom(myElement);
@@ -16,6 +17,10 @@ $(document).ready(() => {
   var rellax = new Rellax('.rellax');
 
   headroom.init();
+
+  var iso = new Isotope( '.isotope', {
+    
+  });
 
   const slider1 = tns({
     container: '.carousel-cocktails',

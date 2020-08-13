@@ -10,7 +10,7 @@
         <img class="w-16 sm:w-20 block" src="@asset('images/82logo.svg')">
       </a>
       @if (is_page() && !is_front_page())
-      <span class="text-3xl text-gray-700 font-light leading-7 ml-3 tracking-tight">| @php the_title() @endphp</span>
+      <span class="text-3xl text-gray-500 font-light leading-7 ml-3 tracking-tight">| @php the_title() @endphp</span>
       @endif
     </h1>
     <div class="hidden md:block">
