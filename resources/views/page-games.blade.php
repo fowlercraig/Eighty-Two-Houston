@@ -16,7 +16,7 @@
         $args = array(
         'posts_per_page' => -1,
         'order'          => 'ASC',
-        'orderby'        => 'menu_order'
+        'orderby'        => 'name'
         );
         $parent = new WP_Query( $args );
         if ( $parent->have_posts() ) : 

@@ -1,5 +1,5 @@
-<div class="bg-gray-900 rounded p-3 flex items-center space-x-2 bg-opacity-75">
-  <div class="h-16 w-16 rounded-full bg-gray-800 overflow-hidden">
+<div class="bg-white-15 rounded p-3 flex items-center space-x-2">
+  <div class="h-16 w-16 rounded-full bg-cool-gray-800 overflow-hidden">
     @php $image = get_post_thumbnail_id();; $size = 'thumbnail'; @endphp
     @php echo wp_get_attachment_image( $image, $size, '', array( 'class' => 'w-full h-full object-cover' ) ) @endphp
   </div>

@@ -73,6 +73,7 @@ module.exports = {
         'brand-red': '#cd1611',
         'brand-red-dark': '#cd1611',
         // Whites
+        'white-05': 'rgba(255,255,255,.05)',
         'white-15': 'rgba(255,255,255,.15)',
         'white-25': 'rgba(255,255,255,.25)',
         'white-50': 'rgba(255,255,255,.50)',
