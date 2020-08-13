@@ -1,0 +1,22 @@
+.nav {
+
+  & .menu-item {
+
+    @apply -mb-px border-b-2 border-transparent transition duration-300;
+    transition: ease;
+
+    &:hover {
+
+      @apply border-b-2 border-white;
+
+    }
+
+  }
+
+  & .current-menu-item {
+
+    @apply border-b-2 border-white;
+
+  }
+
+}

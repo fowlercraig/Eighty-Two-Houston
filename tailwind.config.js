@@ -6,7 +6,10 @@ module.exports = {
       default: {
         css: {
           lineHeight: '1.5rem',
-          color: theme('colors.gray.500'),
+          color: theme('colors.gray.400'),
+          strong: {
+            color: theme('colors.white')
+          },
           h1: {
             color: theme('colors.gray.200'),
             fontWeight: '700',

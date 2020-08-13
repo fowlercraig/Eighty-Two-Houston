@@ -1,5 +1,9 @@
 @tailwind base;
 
+@import url("https://cdnjs.cloudflare.com/ajax/libs/tiny-slider/2.9.3/tiny-slider.css");
+@import 'partials/nav';
+@import 'partials/header';
+
 @tailwind components;
 
 @tailwind utilities;

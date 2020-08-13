@@ -1,7 +1,18 @@
 /**
- * Header
+ * Note: I have omitted any vendor-prefixes for clarity.
+ * Adding them is left as an exercise for the reader.
  */
+.headroom {
+  will-change: transform;
+  transition: transform 200ms linear;
+}
 
-.brand {
-  font-weight: bold;
+.headroom--pinned {
+  transform: translateY(0%);
+  @apply bg-black;
+}
+
+.headroom--unpinned {
+  transform: translateY(-100%);
+  @apply bg-transparent;
 }

@@ -17,7 +17,7 @@ require('laravel-mix-copy-watched');
 const whitelistPatterns = require('purgecss-with-wordpress').whitelistPatterns;
 
 mix.setPublicPath('./dist')
-   .browserSync('madebyhowler.dev.cc');
+   .browserSync('eightytwohouston.dev.cc');
 
 mix.sass('resources/assets/styles/app.scss', 'styles')
    .sass('resources/assets/styles/editor.scss', 'styles')
