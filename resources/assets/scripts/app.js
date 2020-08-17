@@ -7,6 +7,7 @@ feather.replace()
 import Rellax from 'rellax';
 import Headroom from "headroom.js";
 import { tns } from 'tiny-slider/src/tiny-slider'
+import 'alpinejs'
 //var Isotope = require('isotope-layout');
 
 //var myElement = document.querySelector("header");

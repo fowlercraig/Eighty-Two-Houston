@@ -16,9 +16,9 @@
     </div>
     <div class="container lg:-mt-20 relative space-y-6 z-20">
       <div class="bg-black-75 leading-13 px-4 py-3 -ml-4 inline-flex">
-        <h1 class="text-6xl font-bold text-white">@php echo $section['title'] @endphp</h1>
+        <h1 class="text-4xl sm:text-5xl lg:text-6xl font-bold text-white tracking-tight">@php echo $section['title'] @endphp</h1>
       </div>
-      <div class="prose">
+      <div class="prose prose-sm sm:prose">
         @php echo $section['description'] @endphp
       </div>
       @php $link = $section['link'] @endphp
