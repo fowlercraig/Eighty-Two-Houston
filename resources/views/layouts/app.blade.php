@@ -1,7 +1,7 @@
 @include('partials.header')
 
 <div class="container">
-  <main class="main">
+  <main class="content-area main bg-black bg-opacity-50 container py-10">
     @yield('content')
   </main>
 
@@ -13,3 +13,4 @@
 </div>
 
 @include('partials.footer')
+@include('partials.background')

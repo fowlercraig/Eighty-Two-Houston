@@ -16,7 +16,7 @@ require('laravel-mix-copy-watched');
 
 mix
   .setPublicPath('./dist')
-  .browserSync('sage.test');
+  .browserSync('eightytwohouson.dev.cc');
 
 mix
   .sass('resources/assets/styles/app.scss', 'styles')
@@ -36,6 +36,14 @@ mix
 mix
   .copyWatched('resources/assets/images/**', 'dist/images')
   .copyWatched('resources/assets/fonts/**', 'dist/fonts');
+
+mix
+  .options({
+    processCssUrls: false,
+    postCss: [
+      require('tailwindcss')('./tailwind.config.js'),
+    ]
+});
 
 mix
   .autoload({ jquery: ['$', 'window.jQuery'] })

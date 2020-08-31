@@ -1,12 +1,12 @@
-/** Config */
-@import 'config/variables';
-@import 'config/external';
+@tailwind base;
+@tailwind components;
 
-/** Common */
-@import 'common/global';
+.content-area {
+  height: calc(100vh - theme('spacing.36') - theme('spacing.16'));
+}
 
-/** Components */
-@import 'components';
+.container {
+  @apply max-w-none;
+}
 
-/** Partials */
-@import 'partials/header';
+@tailwind utilities;
