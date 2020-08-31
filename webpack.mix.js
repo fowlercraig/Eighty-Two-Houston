@@ -16,7 +16,7 @@ require('laravel-mix-copy-watched');
 
 mix
   .setPublicPath('./dist')
-  .browserSync('eightytwohouson.dev.cc');
+  .browserSync('eightytwohouston.dev.cc');
 
 mix
   .sass('resources/assets/styles/app.scss', 'styles')

@@ -8477,6 +8477,11 @@ table@^5.2.3, table@^5.4.6:
     slice-ansi "^2.1.0"
     string-width "^3.0.0"
 
+tailwindcss-writing-mode@^1.0.0:
+  version "1.0.0"
+  resolved "https://registry.yarnpkg.com/tailwindcss-writing-mode/-/tailwindcss-writing-mode-1.0.0.tgz#687c4d8f4f89dbbf10e38f78134c691d5e6736d8"
+  integrity sha512-w72adZDP4aCCut8gJzVp1Z2Ht55JlY1Q0ZgJULeAbCEUCfkHVJS+ZYlfMXOmflIDNqnOsGizgojXxq87R0kh7g==
+
 tailwindcss@^1.7.6:
   version "1.7.6"
   resolved "https://registry.yarnpkg.com/tailwindcss/-/tailwindcss-1.7.6.tgz#77f294428e399fb570f4bebde2e9bef98456de8a"
