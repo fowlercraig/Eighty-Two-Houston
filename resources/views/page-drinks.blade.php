@@ -9,13 +9,11 @@
 
     <article class="space-y-8 flex flex-col h-full w-full order-first">
 
-      <header class="text-3xl sm:text-3xl lg:text-3xl xl:text-4xl leading-tight">
-        <h2><span class="text-white uppercase font-medium">@php (the_field('excerpt'))</span></h2>
-      </header>
+      @include('partials.page-excerpt',['title' => get_field('excerpt')])
 
       <div class="h-1 bg-white bg-opacity-25"></div>
 
-      <h3>Current Print Menu</h3>
+      @include('partials.section-header',['title' => 'Current Print Menu'])
 
       <div class="space-y-4 h-full overflow-scroll">
         <div class="grid grid-cols-2 lg:grid-cols-4 xl:grid-cols-4 gap-4">

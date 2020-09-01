@@ -5,9 +5,7 @@
 
   <article class="space-y-8 flex flex-col h-full">
 
-    <header class="prose prose-sm sm:prose lg:prose-lg xl:prose-xl max-w-none">
-      <h2><span class="text-white">@php (the_field('excerpt'))</span></h2>
-    </header>
+    @include('partials.page-excerpt',['title' => get_field('excerpt')])
 
     <div class="h-1 bg-white bg-opacity-25"></div>
 

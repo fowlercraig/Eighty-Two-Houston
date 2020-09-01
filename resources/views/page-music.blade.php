@@ -13,17 +13,12 @@
 
       <div class="h-1 bg-white bg-opacity-25"></div>
 
+      <div class="text-lg sm:text-xl lg:text-2xl">@php(the_content())</div>
+
+      @include('partials.section-header',['title' => 'Past Events'])
+
       <div class="space-y-4 h-full overflow-scroll">
-        <div class="prose prose-sm sm:prose lg:prose-lg max-w-none">
-          @php(the_content())
-        </div>
-        <div class="h-64 bg-white"></div>
-        <div class="h-64 bg-white"></div>
-        <div class="h-64 bg-white"></div>
-        <div class="h-64 bg-white"></div>
-        <div class="h-64 bg-white"></div>
-        <div class="h-64 bg-white"></div>
-        <div class="h-64 bg-white"></div>
+        <?php echo do_shortcode('[elfsight_instagram_feed id="1"]') ?>
       </div>
 
     </article>
