@@ -16,6 +16,12 @@ module.exports = {
       default: {
         css: {
           color: theme('colors.gray.300'),
+          strong: {
+            color: theme('colors.white'),
+          },
+          a: {
+            color: theme('colors.white'),
+          },
         }
       }
     }),

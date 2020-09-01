@@ -3,36 +3,33 @@
 @section('content')
   @while(have_posts()) @php(the_post())
 
-  <article class="space-y-8 flex flex-col h-full">
+  <div class="lg:flex h-full">
 
-    @include('partials.page-excerpt',['title' => get_field('excerpt')])
+    @include('partials.page-header')
 
-    <div class="h-1 bg-white bg-opacity-25"></div>
+    <article class="space-y-8 flex flex-col h-full w-full order-first">
 
-    <div class="space-y-4 h-full overflow-scroll">
-      <div class="prose prose-sm sm:prose lg:prose-lg max-w-none">
-        @php(the_content())
-      </div>
-      <div class="flex flex-wrap">
-        <?php
-          $args = array(
-            'posts_per_page' => -1,
-            'order'          => 'ASC',
-            'orderby'        => 'name'
-          );
-          $parent = new WP_Query( $args );
-          if ( $parent->have_posts() ) : 
-          while ( $parent->have_posts() ) : $parent->the_post();
-        ?>
-        <div class="w-1/3">
-          <span>@php(the_title())</span>
+      @include('partials.page-excerpt',['title' => get_field('excerpt')])
+
+      <div class="h-1 bg-white bg-opacity-25"></div>
+
+      @include('partials.section-header',['title' => 'Current Lineup'])
+
+      <div class="grid grid-cols-1 lg:grid-cols-2 gap-8">
+        
+        <div class="col-span-1">
+          @include('partials.games-arcade')
         </div>
-        <?php endwhile; ?>
-        <?php endif; wp_reset_postdata(); ?>
-      </div>
-    </div>
 
-  </article>
+        <div class="col-span-1">
+          @include('partials.games-pinball')
+        </div>
+
+      </div>
+
+    </article>
+
+  </div>
 
     
   @endwhile
