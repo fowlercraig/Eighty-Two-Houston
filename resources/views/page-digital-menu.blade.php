@@ -10,12 +10,12 @@
   $image_two = get_field('menu_animation');
 @endphp
 
-<div class="max-w-xl mx-auto relative">
-  <div class="aspect-ratio aspect-ratio--9x16 bg-black relative">
-    <div class="absolute inset-0">
-      <div class="absolute inset-0"><img src="@php echo $image_two @endphp"></div>
-      @php echo wp_get_attachment_image( $image_one, 'large', '', array( 'class' => 'block h-full w-auto' ) ) @endphp
-    </div>
+<div class="h-screen relative bg-black">
+  <div class="absolute inset-0 z-20">
+    <img class="h-full w-full object-contain" src="@php echo $image_two @endphp">
+  </div>
+  <div class="absolute inset-0">
+    @php echo wp_get_attachment_image( $image_one, 'large', '', array( 'class' => 'h-full w-full object-contain' ) ) @endphp
   </div>
 </div>
 
