@@ -15,6 +15,7 @@
 
       <div class="space-y-4 h-full overflow-scroll prose lg:prose-lg xl:prose-xl max-w-none">
         @php(the_content())
+        @include('partials.social-menu')
       </div>
 
     </article>

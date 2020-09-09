@@ -5,6 +5,15 @@
 
 @tailwind components;
 
+.nav {
+  & .menu-item {
+    @apply border-b border-transparent pb-1;
+    &.current-menu-item {
+      @apply border-white;
+    }
+  }
+}
+
 @screen md {
   .content-area {
     height: calc(100vh - theme('spacing.36') - theme('spacing.16'));

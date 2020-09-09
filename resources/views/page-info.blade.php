@@ -15,7 +15,10 @@
 
       <div class="space-y-4 h-full overflow-scroll">
         <div class="grid grid-cols-3 gap-8">
-          <div class="col-span-2 prose lg:prose-lg xl:prose-xl max-w-none">@php(the_content())</div>
+          <div class="col-span-2 prose lg:prose-lg xl:prose-xl max-w-none">
+            @php(the_content())
+            @include('partials.social-menu')
+          </div>
           <div class="col-span-1">
             <h2 class="text-xl font-medium uppercase mb-6">
               1201 Sant Emanuel St. Ste 110<br>
