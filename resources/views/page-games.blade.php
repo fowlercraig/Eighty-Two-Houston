@@ -17,11 +17,11 @@
 
       <div class="grid grid-cols-1 lg:grid-cols-2 gap-8">
         
-        <div class="col-span-1">
+        <div class="col-span-1 sm:h-full">
           @include('partials.games-arcade')
         </div>
 
-        <div class="col-span-1">
+        <div class="col-span-1 sm:h-full">
           @include('partials.games-pinball')
         </div>
 

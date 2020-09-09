@@ -1,9 +1,11 @@
 @include('partials.header')
 
 <div class="container">
-  <main class="content-area main bg-black bg-opacity-50 container py-10">
+  
+  <main class="content-area main @if(!is_front_page()) bg-black bg-opacity-50 @endif container py-10">
     @yield('content')
   </main>
+  
 
   @hasSection('sidebar')
     <aside class="sidebar">

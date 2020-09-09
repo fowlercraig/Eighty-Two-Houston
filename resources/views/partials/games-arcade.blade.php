@@ -14,7 +14,9 @@
 <div class="lg:flex">
   
   <div class="text-4xl lg:text-5xl relative mb-12 lg:space-y-4 flex lg:block items-center lg:border-r-4 border-white border-opacity-25 mr-10 pr-10">
-    <div class="h-12 w-12 bg-red-600 lg:mx-auto"></div>
+    <div class="w-12 lg:mx-auto">
+      <img src="@asset('images/arcade-icon@2x.png')" class="">
+    </div>
     <h1 class="font-medium lg:writing-mode-vertical lg:mx-auto mr-6 leading-10">
       <span class="text-white uppercase block">Arcade</span>
     </h1>
