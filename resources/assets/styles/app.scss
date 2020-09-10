@@ -8,6 +8,7 @@
 .nav {
   & .menu-item {
     @apply border-b border-transparent pb-1;
+    &:hover,
     &.current-menu-item {
       @apply border-white;
     }

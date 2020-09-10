@@ -3,11 +3,11 @@
 @section('content')
   @while(have_posts()) @php(the_post())
 
-  <div class="lg:flex h-full">
+  <div class="h-full">
   
     @include('partials.page-header')
 
-    <article class="space-y-8 flex flex-col h-full w-full order-first">
+    <article class="space-y-6 flex flex-col h-full w-full order-first">
 
       @include('partials.page-excerpt',['title' => get_field('excerpt')])
 

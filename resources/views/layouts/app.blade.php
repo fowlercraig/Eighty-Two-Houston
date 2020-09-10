@@ -2,7 +2,7 @@
 
 <div class="container">
   
-  <main class="content-area main @if(!is_front_page()) bg-black bg-opacity-50 @endif container py-10">
+  <main class="content-area main @if(!is_front_page()) bg-black bg-opacity-50 @endif container py-10 overflow-hidden">
     @yield('content')
   </main>
   

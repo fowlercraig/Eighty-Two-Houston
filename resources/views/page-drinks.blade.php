@@ -3,7 +3,7 @@
 @section('content')
   @while(have_posts()) @php(the_post())
 
-  <div class="lg:flex h-full">
+  <div class="h-full">
   
     @include('partials.page-header')
 

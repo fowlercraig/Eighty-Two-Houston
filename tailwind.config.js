@@ -16,12 +16,28 @@ module.exports = {
       default: {
         css: {
           color: theme('colors.white'),
+          lineHeight: '140%',
           strong: {
             color: theme('colors.white'),
           },
           a: {
             color: theme('colors.white'),
           },
+          p: {
+            lineHeight: '140%',
+          }
+        }
+      },
+      'lg': {
+        lineHeight: '140%',
+        p: {
+          lineHeight: '140%',
+        }
+      },
+      'xl': {
+        lineHeight: '140%',
+        p : {
+          lineHeight: '140%',
         }
       }
     }),
