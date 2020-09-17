@@ -15,9 +15,9 @@
 
       @include('partials.section-header',['title' => 'Current Lineup'])
 
-      <div class="grid grid-cols-1 lg:grid-cols-2 gap-8 overflow-scroll">
+      <div class="grid grid-cols-1 lg:grid-cols-3 gap-8 overflow-scroll">
         
-        <div class="col-span-1 sm:h-full">
+        <div class="col-span-2 sm:h-full">
           @include('partials.games-arcade')
         </div>
 
