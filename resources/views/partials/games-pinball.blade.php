@@ -4,6 +4,7 @@
     'posts_per_page'  => -1,
     'order'           => 'ASC',
     'orderby'         => 'menu_order',
+    'orderby'         => 'name',
     'category__in'    => array(6)
   );
 
@@ -23,7 +24,7 @@
   </div>
 
   <div class="w-full">
-    <ul class="text-xs md:text-base md:text-lg uppercase font-medium">
+    <ul class="text-xs sm:text-sm xl:text-lg uppercase font-medium">
       @if ( $parent->have_posts() )
       @php while ( $parent->have_posts() ) : $parent->the_post(); @endphp
       <li><?php the_title(); ?></li>

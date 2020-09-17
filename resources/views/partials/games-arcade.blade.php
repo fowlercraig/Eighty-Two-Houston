@@ -3,7 +3,7 @@
   $args = array(
     'posts_per_page'   => -1,
     'order'            => 'ASC',
-    'orderby'          => 'menu_order',
+    'orderby'          => 'name',
     'category__not_in' => array(6)
   );
 
@@ -23,7 +23,7 @@
   </div>
 
   <div class="w-full">
-    <ul class="grid grid-cols-2 md:grid-cols-4 lg:grid-cols-2 col-gap-4 text-xs md:text-base md:text-lg uppercase font-medium">
+    <ul class="grid grid-cols-2 md:grid-cols-2 lg:grid-cols-2 col-gap-4 text-xs sm:text-sm xl:text-lg uppercase font-medium">
       @if ( $parent->have_posts() )
       @php while ( $parent->have_posts() ) : $parent->the_post(); @endphp
       <li><?php the_title(); ?></li>
