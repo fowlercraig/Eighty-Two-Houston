@@ -45,6 +45,9 @@ module.exports = {
       fontFamily: {
         sans: ['Barlow', ...defaultTheme.fontFamily.sans],
       },
+      spacing: {
+        'divider': '2px'
+      },
     },
   },
   variants: {

@@ -31,7 +31,7 @@
     class="fixed top-0 w-full bg-black z-10 block md:hidden">
     <div class="h-16"></div>
     <div class="container">
-      <div class="h-1 bg-white bg-opacity-25"></div>
+      <div class="h-divider bg-white bg-opacity-25"></div>
       @if (has_nav_menu('primary_navigation'))
         {!! wp_nav_menu(['theme_location' => 'primary_navigation', 'menu_class' => 'py-6 text-lg uppercase tracking-wider font-medium', 'echo' => false]) !!}
       @endif

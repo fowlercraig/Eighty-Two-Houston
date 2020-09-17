@@ -11,7 +11,7 @@
 
       @include('partials.page-excerpt',['title' => get_field('excerpt')])
 
-      <div class="h-1 bg-white bg-opacity-25"></div>
+      <div class="h-divider bg-white bg-opacity-25"></div>
 
       @include('partials.section-header',['title' => 'Current Print Menu'])
 
