@@ -11,7 +11,7 @@
 
       @include('partials.page-excerpt',['title' => get_field('excerpt')])
 
-      <div class="h-divider bg-white bg-opacity-25"></div>
+      <div class="h-divider bg-white bg-opacity-10"></div>
 
       <div class="space-y-4 h-full overflow-scroll">
         <div class="lg:grid grid-cols-3 gap-8">

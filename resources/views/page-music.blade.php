@@ -11,7 +11,7 @@
 
       @include('partials.page-excerpt',['title' => get_field('excerpt')])
 
-      <div class="h-divider bg-white bg-opacity-25"></div>
+      <div class="h-divider bg-white bg-opacity-10"></div>
 
       <div class="text-lg sm:text-xl lg:text-2xl">@php(the_content())</div>
 

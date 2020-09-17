@@ -14,7 +14,7 @@
 
 <div class="lg:flex">
   
-  <div class="text-xl sm:text-4xl lg:text-5xl relative mb-4 md:mb-12 lg:space-y-4 flex lg:block items-center lg:border-r-2 border-white border-opacity-25 mr-10 pr-10">
+  <div class="text-xl sm:text-4xl lg:text-5xl relative mb-4 md:mb-12 lg:space-y-4 flex lg:block items-center lg:border-r-2 border-white border-opacity-10 mr-10 pr-10">
     <div class="w-6 lg:w-12 mr-2 lg:mx-auto">
       <img src="@asset('images/pinball.svg')" class="">
     </div>
