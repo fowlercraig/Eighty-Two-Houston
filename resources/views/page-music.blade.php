@@ -13,7 +13,10 @@
 
       <div class="h-divider bg-white bg-opacity-10"></div>
 
-      <div class="text-lg sm:text-xl lg:text-2xl">@php(the_content())</div>
+      <div class="prose lg:prose-lg xl:prose-xl max-w-none">
+        @php(the_content())
+        @include('partials.social-menu')
+      </div>
 
       @include('partials.section-header',['title' => 'Past Events'])
 
