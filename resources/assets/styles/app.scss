@@ -15,6 +15,10 @@
   }
 }
 
+.home-area {
+  height: calc(100vh - theme('spacing.36') - theme('spacing.16'));
+}
+
 @screen md {
   .content-area {
     height: calc(100vh - theme('spacing.36') - theme('spacing.16'));

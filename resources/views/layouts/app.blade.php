@@ -2,10 +2,9 @@
 
 <div class="container">
   
-  <main class="content-area main @if(!is_front_page()) bg-black bg-opacity-50 @endif container py-4 md:py-10 overflow-hidden">
+  <main class="content-area main @if(!is_front_page()) bg-black bg-opacity-50 container py-4 md:py-10 @endif overflow-hidden">
     @yield('content')
   </main>
-  
 
   @hasSection('sidebar')
     <aside class="sidebar">
