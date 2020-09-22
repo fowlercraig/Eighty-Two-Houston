@@ -1,7 +1,9 @@
 @tailwind base;
 
 @import url('https://fonts.googleapis.com/css2?family=Barlow:wght@400;500;600;700&display=swap');
+/*! purgecss start ignore */
 @import '~tiny-slider/dist/tiny-slider.css';
+/*! purgecss end ignore */
 @import './components/aspect';
 
 @tailwind components;
