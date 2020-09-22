@@ -23,7 +23,7 @@
   </div>
 
   <div class="w-full">
-    <ul class="grid grid-cols-2 md:grid-cols-2 lg:grid-cols-2 col-gap-4 text-sm xl:text-lg uppercase font-medium">
+    <ul class="grid grid-cols-2 md:grid-cols-2 xl:grid-cols-3 col-gap-4 text-sm xl:text-base uppercase font-medium">
       @if ( $parent->have_posts() )
       @php while ( $parent->have_posts() ) : $parent->the_post(); @endphp
       <li><?php the_title(); ?></li>

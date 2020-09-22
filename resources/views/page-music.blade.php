@@ -7,7 +7,7 @@
   
     @include('partials.page-header')
 
-    <article class="space-y-6 flex flex-col h-full w-full order-first">
+    <article class="space-y-6 flex flex-col h-full w-full order-first md:overflow-scroll">
 
       @include('partials.page-excerpt',['title' => get_field('excerpt')])
 
@@ -20,7 +20,7 @@
 
       @include('partials.section-header',['title' => 'Past Events'])
 
-      <div class="space-y-4 h-full overflow-scroll">
+      <div class="space-y-4 pb-8">
         <?php echo do_shortcode('[elfsight_instagram_feed id="1"]') ?>
       </div>
 

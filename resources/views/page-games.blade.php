@@ -7,21 +7,26 @@
 
     @include('partials.page-header')
 
-    <article class="space-y-6 flex flex-col h-full w-full order-first">
+    <article class="space-y-6 flex flex-col h-full w-full order-first lg:overflow-scroll">
 
       @include('partials.page-excerpt',['title' => get_field('excerpt')])
+
+      <div class="prose lg:prose-lg xl:prose-xl">
+        @php(the_content())
+        @include('partials.social-menu')
+      </div>
 
       <div class="h-divider bg-white bg-opacity-10"></div>
 
       @include('partials.section-header',['title' => 'Current Lineup'])
 
-      <div class="grid grid-cols-1 lg:grid-cols-3 gap-8 overflow-scroll">
+      <div class="grid grid-cols-1 lg:grid-cols-3 gap-8">
         
-        <div class="col-span-2 sm:h-full">
+        <div class="col-span-2">
           @include('partials.games-arcade')
         </div>
 
-        <div class="col-span-1 sm:h-full">
+        <div class="col-span-1">
           @include('partials.games-pinball')
         </div>
 
