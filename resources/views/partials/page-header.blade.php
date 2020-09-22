@@ -1,4 +1,4 @@
-<div class="page-header text-3xl md:text-6xl lg:text-6xl pl-4 sm:pl-10 relative mb-12 lg:space-y-4 block items-center">
+<div class="page-header text-3xl md:text-5xl lg:text-6xl pl-4 sm:pl-10 relative mb-12 lg:space-y-4 block items-center">
   <h1 class="font-medium writing-mode-vertical mx-auto leading-10">
     <span class="text-white uppercase block">{!! $title !!}</span>
   </h1>
