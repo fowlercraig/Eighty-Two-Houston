@@ -7,7 +7,7 @@
   
     @include('partials.page-header')
 
-    <article class="space-y-6 flex flex-col h-full w-full order-first md:overflow-scroll">
+    <article class="space-y-6 h-full w-full order-first md:overflow-scroll">
 
       @include('partials.page-excerpt',['title' => get_field('excerpt')])
 

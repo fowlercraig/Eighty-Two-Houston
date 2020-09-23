@@ -48,9 +48,6 @@ module.exports = {
       spacing: {
         'divider': '2px'
       },
-      spacing: {
-        'divider': '2px'
-      },
       opacity: {
         '10': '0.1',
         '20': '0.2',

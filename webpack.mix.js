@@ -3,55 +3,6 @@ require('@tinypixelco/laravel-mix-wp-blocks');
 require('laravel-mix-purgecss');
 require('laravel-mix-copy-watched');
 
-const purgecssWordpress = {
-  whitelistPatterns: [
-      /^(is-|has-|will-|js-|fs-|feather-|word-|aos-|wp-|aspect-|embed-|tns-|alm-)/,
-      /^rtl(-.*)?$/,
-      /^home(-.*)?$/,
-      /^blog(-.*)?$/,
-      /^archive(-.*)?$/,
-      /^date(-.*)?$/,
-      /^error404(-.*)?$/,
-      /^logged-in(-.*)?$/,
-      /^admin-bar(-.*)?$/,
-      /^no-customize-support(-.*)?$/,
-      /^wp-custom-logo(-.*)?$/,
-      /^search(-.*)?$/,
-      /^nav(-.*)?$/,
-      /^wp(-.*)?$/,
-      /^screen(-.*)?$/,
-      /^navigation(-.*)?$/,
-      /^(.*)-template(-.*)?$/,
-      /^(.*)?-?single(-.*)?$/,
-      /^postid-(.*)?$/,
-      /^post-(.*)?$/,
-      /^attachmentid-(.*)?$/,
-      /^attachment(-.*)?$/,
-      /^page(-.*)?$/,
-      /^(post-type-)?archive(-.*)?$/,
-      /^author(-.*)?$/,
-      /^gallery(-.*)?$/,
-      /^category(-.*)?$/,
-      /^tag(-.*)?$/,
-      /^card(-.*)?$/,
-      /^menu(-.*)?$/,
-      /^tags(-.*)?$/,
-      /^tax-(.*)?$/,
-      /^term-(.*)?$/,
-      /^date-(.*)?$/,
-      /^(.*)?-?paged(-.*)?$/,
-      /^says(-.*)?$/,
-      /^depth(-.*)?$/,
-      /^comment(-.*)?$/,
-      /^comments(-.*)?$/,
-      /^children(-.*)?$/,
-      /^crnb(-.*)?$/,
-      /^custom(-.*)?$/,
-      /^custom-background(-.*)?$/,
-      /^port-description(-.*)?$/
-  ]
-};
-
 /*
  |--------------------------------------------------------------------------
  | Mix Asset Management
@@ -73,8 +24,7 @@ mix
   .purgeCss({
     extend: { content: [path.join(__dirname, 'index.php')] },
     whitelist: require('purgecss-with-wordpress').whitelist,
-    //whitelistPatterns: require('purgecss-with-wordpress').whitelistPatterns,
-    whitelistPatterns: purgecssWordpress.whitelistPatterns
+    whitelistPatterns: require('purgecss-with-wordpress').whitelistPatterns,
   });
 
 mix
