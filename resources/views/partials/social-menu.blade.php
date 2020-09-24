@@ -4,6 +4,7 @@
   $primaryNav = wp_get_nav_menu_items($menuID); 
 @endphp
 
+<?php /*
 <div class="flex space-x-2 items-center">
   @foreach ( $primaryNav as $navItem )
   @php 
@@ -23,4 +24,4 @@
 </div>
 
 <div class="h-6 md:hidden"></div>
-
+*/ ?>
