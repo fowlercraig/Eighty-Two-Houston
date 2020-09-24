@@ -11,7 +11,7 @@
 
       @include('partials.page-excerpt',['title' => get_field('excerpt')])
 
-        <div class="prose lg:prose-lg xl:prose-xl">
+        <div class="prose lg:prose-lg xl:prose-xl max-w-full">
           @php(the_content())
           @include('partials.social-menu')
         </div>
