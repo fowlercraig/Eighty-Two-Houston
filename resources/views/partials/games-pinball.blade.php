@@ -24,7 +24,7 @@
   </div>
 
   <div class="w-full">
-    <ul class="text-sm xl:text-base uppercase font-medium">
+    <ul class="text-xs sm:text-sm xl:text-base uppercase font-medium">
       @if ( $parent->have_posts() )
       @php while ( $parent->have_posts() ) : $parent->the_post(); @endphp
       <li><?php the_title(); ?></li>
