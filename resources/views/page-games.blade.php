@@ -11,12 +11,12 @@
 
       @include('partials.page-excerpt',['title' => get_field('excerpt')])
 
+      <div class="h-divider bg-white bg-opacity-10"></div>
+
       <div class="prose lg:prose-lg xl:prose-xl max-w-full">
         @php(the_content())
         @include('partials.social-menu')
       </div>
-
-      <div class="h-divider bg-white bg-opacity-10"></div>
 
       @include('partials.section-header',['title' => 'Current Lineup'])
 
