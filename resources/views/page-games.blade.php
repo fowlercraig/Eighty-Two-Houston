@@ -15,7 +15,6 @@
 
       <div class="prose lg:prose-lg xl:prose-xl max-w-full">
         @php(the_content())
-        @include('partials.social-menu')
       </div>
 
       @include('partials.section-header',['title' => 'Current Lineup'])
