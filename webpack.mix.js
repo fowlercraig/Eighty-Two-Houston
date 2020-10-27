@@ -65,7 +65,7 @@ const purgecssWordpress = {
 
 mix
   .setPublicPath('./dist')
-  .browserSync('eightytwohouston.dev.cc');
+  .browserSync('eightytwo-multisite.dev.cc');
 
 mix
   .sass('resources/assets/styles/app.scss', 'styles')

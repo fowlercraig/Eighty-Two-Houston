@@ -1,3 +1,11 @@
+@php global $blog_id @endphp
+
+@if($blog_id == 1)
+
+@include('home')
+
+@else
+
 @include('partials.header')
 
 <div class="container">
@@ -15,3 +23,5 @@
 
 @include('partials.footer')
 @include('partials.background')
+
+@endif
