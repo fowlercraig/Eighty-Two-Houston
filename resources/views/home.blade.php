@@ -21,11 +21,11 @@
       x-description="Display background image on hover" 
       x-show="la" 
       x-transition:enter="transform transition ease duration-1000 sm:duration-1000" 
-      x-transition:enter-start="opacity-0 scale-100" 
-      x-transition:enter-end="opacity-100 scale-105" 
+      x-transition:enter-start="opacity-0 scale-105" 
+      x-transition:enter-end="opacity-100 scale-100" 
       x-transition:leave="transform transition ease duration-1000 sm:duration-1000" 
-      x-transition:leave-start="opacity-100 scale-105" 
-      x-transition:leave-end="opacity-0 scale-100"
+      x-transition:leave-start="opacity-100 scale-100" 
+      x-transition:leave-end="opacity-0 scale-105"
     >
       @php echo wp_get_attachment_image( $ca['image_mobile'], 'large', '', array( 'class' => 'block sm:hidden object-cover w-full h-full' ) ) @endphp
       @php echo wp_get_attachment_image( $ca['image'], 'large', '', array( 'class' => 'hidden sm:block object-cover w-full h-full' ) ) @endphp
@@ -35,11 +35,11 @@
       x-description="Display background image on hover" 
       x-show="houston" 
       x-transition:enter="transform transition ease duration-1000 sm:duration-1000" 
-      x-transition:enter-start="opacity-0 scale-100" 
-      x-transition:enter-end="opacity-100 scale-105" 
+      x-transition:enter-start="opacity-0 scale-105" 
+      x-transition:enter-end="opacity-100 scale-100" 
       x-transition:leave="transform transition ease duration-1000 sm:duration-1000" 
-      x-transition:leave-start="opacity-100 scale-105" 
-      x-transition:leave-end="opacity-0 scale-100"
+      x-transition:leave-start="opacity-100 scale-100" 
+      x-transition:leave-end="opacity-0 scale-105"
     >
       @php echo wp_get_attachment_image( $tx['image_mobile'], 'large', '', array( 'class' => 'block sm:hidden object-cover w-full h-full' ) ) @endphp
       @php echo wp_get_attachment_image( $tx['image'], 'large', '', array( 'class' => 'object-cover w-full h-full' ) ) @endphp
