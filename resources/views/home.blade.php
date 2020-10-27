@@ -6,12 +6,13 @@
   @include('partials.header')
   <div class="absolute inset-0 flex items-center justify-center z-40">
     <div class="bg-black bg-opacity-50 flex items-center text-xl sm:text-3xl uppercase tracking-wide">
-      @php $commonClasses = 'p-4 md:p-10 block group-hover:underline' @endphp
+      @php $commonClasses = 'p-4 md:p-6 block group-hover:underline' @endphp
       <div @mouseenter="{la=true;houston=false}" class="relative group" :class="{ 'underline': la, 'no-underline': !la }">
-        <a class="@php echo $commonClasses @endphp" href="@php echo $ca['url']['url'] @endphp">@php echo $ca['url']['title'] @endphp</a>
+        <a class="pr-3 md:pr-6 @php echo $commonClasses @endphp" href="@php echo $ca['url']['url'] @endphp">@php echo $ca['url']['title'] @endphp</a>
       </div>
+      <img src="@asset('images/ad-logo.png')" class="w-12">
       <div @mouseenter="{la=false;houston=true}" class="relative group" :class="{ 'underline': houston, 'no-underline': !houston }">
-        <a class="@php echo $commonClasses @endphp" href="@php echo $tx['url']['url'] @endphp">@php echo $tx['url']['title'] @endphp</a>
+        <a class="pl-3 md:pl-6 @php echo $commonClasses @endphp" href="@php echo $tx['url']['url'] @endphp">@php echo $tx['url']['title'] @endphp</a>
       </div>
     </div>
   </div>
