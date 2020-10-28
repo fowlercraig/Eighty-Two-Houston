@@ -19,7 +19,7 @@
       @endif
     </a>
   @endforeach
-    <span>@eightytwohouston</span>
+    <span>@eightytwola</span>
 </div>
 
 <div class="h-6 md:hidden"></div>
