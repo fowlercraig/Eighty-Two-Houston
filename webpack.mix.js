@@ -5,7 +5,7 @@ require('laravel-mix-copy-watched');
 
 const purgecssWordpress = {
   whitelistPatterns: [
-      /^(is-|has-|will-|js-|fs-|feather-|word-|aos-|wp-|aspect-|embed-|tns-|alm-)/,
+      /^(is-|has-|will-|js-|fs-|feather-|word-|aos-|wp-|aspect-|embed-|tns-|alm-|form-)/,
       /^rtl(-.*)?$/,
       /^home(-.*)?$/,
       /^blog(-.*)?$/,
