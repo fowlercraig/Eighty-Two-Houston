@@ -6,6 +6,8 @@
 
 @else
 
+<div id="swup" class="transition-fade main h-full">
+
 @include('partials.header')
 
 <div class="container">
@@ -23,5 +25,7 @@
 
 @include('partials.footer')
 @include('partials.background')
+
+</div>
 
 @endif
