@@ -8,7 +8,7 @@
 @section('content')
   @while(have_posts()) @php(the_post())
 
-  <div class="flex h-full">
+  <div class="block sm:flex h-full">
   
     @include('partials.page-header')
 
@@ -25,9 +25,8 @@
             @include('partials.social-menu')
           </div>
           <div class="lg:col-span-1 prose lg:prose-lg xl:prose-xl max-w-none">
-            <p class="mb-6">
-              1201 Sant Emanuel St. Ste 110<br>
-              Houston TX, 7703
+            <p class="mb-2">
+              <?php the_field('address'); ?>
             </p>
 
             @if(!$imageid)
