@@ -12,11 +12,11 @@ import 'alpinejs'
 $(document).ready(() => {
   
   const swup = new Swup({
-    plugins: [new SwupOverlayTheme({
-      color: '#000',
-      duration: 600,
-      direction: 'to-top',
-    })]
+    //plugins: [new SwupOverlayTheme({
+    //  color: '#000',
+    //  duration: 600,
+    //  direction: 'to-top',
+    //})]
   });
 
   function init() {
