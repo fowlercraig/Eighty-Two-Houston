@@ -2,7 +2,7 @@
 
 <header class="banner relative z-20" x-data="{ open: false }">
   <div class="container flex justify-between items-center h-16 md:h-24 lg:h-36 relative z-20">
-    <a class="brand" href="/">
+    <a class="brand swup-link" href="/">
       <img alt="EightyTwo" src="@asset('images/eightytwologo-red.svg')" class="h-6 md:h-10 lg:h-16 w-auto">
     </a>
 

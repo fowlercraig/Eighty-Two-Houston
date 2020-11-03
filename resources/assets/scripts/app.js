@@ -10,13 +10,18 @@ import { tns } from "tiny-slider/src/tiny-slider"
 import 'alpinejs'
 
 $(document).ready(() => {
+
+  const options = {
+    linkSelector: 'a.swup-link',
+  };
   
   const swup = new Swup({
-    //plugins: [new SwupOverlayTheme({
-    //  color: '#000',
-    //  duration: 600,
-    //  direction: 'to-top',
-    //})]
+    plugins: [new SwupOverlayTheme({
+     color: '#000',
+     duration: 600,
+     direction: 'to-top',
+    })],
+    linkSelector: 'a.swup-link',
   });
 
   function init() {

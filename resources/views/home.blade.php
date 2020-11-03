@@ -7,7 +7,7 @@
     @include('partials.header')
     <div class="absolute inset-0 flex items-center justify-center z-40">
       <div class="bg-black bg-opacity-50 flex items-center text-xl sm:text-3xl uppercase tracking-wide">
-        @php $commonClasses = 'p-4 md:p-6 block group-hover:underline' @endphp
+        @php $commonClasses = 'p-4 md:p-6 block group-hover:underline swup-link' @endphp
         <div @mouseenter="{la=true;houston=false}" class="relative group" :class="{ 'underline': la, 'no-underline': !la }">
           <a class="pr-3 md:pr-6 @php echo $commonClasses @endphp" href="@php echo $ca['url']['url'] @endphp">@php echo $ca['url']['title'] @endphp</a>
         </div>
