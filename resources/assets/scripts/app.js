@@ -19,7 +19,7 @@ $(document).ready(() => {
     plugins: [new SwupOverlayTheme({
      color: '#000',
      duration: 600,
-     direction: 'to-top',
+     direction: 'to-bottom',
     })],
     linkSelector: 'a.swup-link',
   });
