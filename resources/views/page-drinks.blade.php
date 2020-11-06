@@ -17,7 +17,7 @@
         @php(the_content())
       </div>
 
-      @include('partials.section-header',['title' => 'Current Print Menu'])
+      @include('partials.section-header',['title' => 'Current Print Menu', 'link' => get_permalink(1532)])
 
       <div class="space-y-4 h-full">
         <div class="grid grid-cols-2 lg:grid-cols-4 xl:grid-cols-4">

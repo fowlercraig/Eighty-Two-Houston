@@ -19,12 +19,12 @@
       <div class="h-divider bg-white bg-opacity-10"></div>
 
       <div class="space-y-4 h-full overflow-scroll">
-        <div class="lg:grid grid-cols-3 gap-8">
-          <div class="lg:col-span-2 prose lg:prose-lg xl:prose-xl max-w-none">
+        <div class="lg:grid grid-cols-10 gap-8">
+          <div class="lg:col-span-7 prose lg:prose-lg xl:prose-xl max-w-none">
             @php(the_content())
             @include('partials.social-menu')
           </div>
-          <div class="lg:col-span-1 prose lg:prose-lg xl:prose-xl max-w-none">
+          <div class="lg:col-span-3 prose lg:prose-lg xl:prose-xl max-w-none">
             <p class="mb-2">
               <?php the_field('address'); ?>
             </p>

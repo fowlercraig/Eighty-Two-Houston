@@ -11,6 +11,16 @@
 
 @endphp
 
+@php 
+  global $blog_id;
+  if($blog_id == 3) {
+    // If Los Angeles
+    $classes = 'grid grid-cols-2 md:grid-cols-2';
+  } else {
+    $classes = 'grid grid-cols-2 md:grid-cols-2 xl:grid-cols-3';
+  }
+@endphp
+
 <div class="lg:flex">
   
   <div class="text-xl sm:text-4xl lg:text-5xl relative mb-4 md:mb-12 lg:space-y-4 flex lg:block items-center lg:border-r-2 border-white border-opacity-10 mr-10 pr-10">
@@ -23,7 +33,7 @@
   </div>
 
   <div class="w-full">
-    <ul class="grid grid-cols-2 md:grid-cols-2 xl:grid-cols-3 text-xs sm:text-sm xl:text-base uppercase font-medium">
+    <ul class="<?=$classes ?> text-xs sm:text-sm xl:text-base uppercase font-medium">
       @if ( $parent->have_posts() )
       @php while ( $parent->have_posts() ) : $parent->the_post(); @endphp
       <li><?php the_title(); ?></li>
