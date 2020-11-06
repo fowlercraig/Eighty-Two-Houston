@@ -1,5 +1,19 @@
 @extends('layouts.app')
 
+@php 
+  global $blog_id;
+  if($blog_id == 3) {
+    // Los Angeles
+    $grid = 'grid grid-cols-1 lg:grid-cols-2 gap-8';
+    $col1 = 'col-span-1';
+    $col2 = 'col-span-1';
+  } else {
+    $grid = 'grid grid-cols-1 lg:grid-cols-3 gap-8';
+    $col1 = 'col-span-2';
+    $col2 = 'col-span-1';
+  }
+@endphp
+
 @section('content')
   @while(have_posts()) @php(the_post())
 
@@ -19,13 +33,13 @@
 
       @include('partials.section-header',['title' => 'Current Lineup'])
 
-      <div class="grid grid-cols-1 lg:grid-cols-3 gap-8">
+      <div class="<?=$grid ?>">
         
-        <div class="col-span-2">
+        <div class="<?=$col1 ?>">
           @include('partials.games-arcade')
         </div>
 
-        <div class="col-span-1">
+        <div class="<?=$col2 ?>">
           @include('partials.games-pinball')
         </div>
 

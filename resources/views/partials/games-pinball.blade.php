@@ -1,5 +1,13 @@
 @php
 
+  global $blog_id;
+  if($blog_id == 3) {
+    // Los Angeles
+    $grid = 'grid grid-cols-1 lg:grid-cols-2 col-gap-8';
+  } else {
+    $grid = '';
+  }
+
   $args = array(
     'posts_per_page'  => -1,
     'order'           => 'ASC',
@@ -24,7 +32,7 @@
   </div>
 
   <div class="w-full">
-    <ul class="text-xs sm:text-sm xl:text-base uppercase font-medium">
+    <ul class="text-xs sm:text-sm xl:text-base uppercase font-medium <?=$grid ?>">
       @if ( $parent->have_posts() )
       @php while ( $parent->have_posts() ) : $parent->the_post(); @endphp
       <li><?php the_title(); ?></li>
