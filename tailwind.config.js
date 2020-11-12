@@ -18,6 +18,28 @@ module.exports = {
         css: {
           color: theme('colors.white'),
           lineHeight: '140%',
+          '.form-input': {
+            color: theme('colors.white'),
+            borderRadius: theme('borderRadius.none'),
+            borderColor: 'rgba(255,255,255,.5)',
+            backgroundColor: theme('colors.transparent'),
+            marginBottom: '8px',
+          },
+          '.form-textarea': {
+            color: theme('colors.white'),
+            borderRadius: theme('borderRadius.none'),
+            borderColor: 'rgba(255,255,255,.5)',
+            backgroundColor: theme('colors.transparent'),
+            marginBottom: '8px',
+            maxHeight: theme('spacing.32'),
+          },
+          '.form-select': {
+            color: theme('colors.white'),
+            borderRadius: theme('borderRadius.none'),
+            borderColor: 'rgba(255,255,255,.5)',
+            backgroundColor: theme('colors.transparent'),
+            marginBottom: '8px',
+          },
           strong: {
             color: theme('colors.white'),
           },
