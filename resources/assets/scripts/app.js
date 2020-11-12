@@ -27,6 +27,7 @@ $(document).ready(() => {
   function init() {
 
     feather.replace();
+
     var options = {
       'carousel': {
         container: '.carousel',
@@ -42,6 +43,21 @@ $(document).ready(() => {
         mouseDrag: false,
         lazyload: true,
         controlsContainer: "#carousel-controls"
+      },
+      'menu': {
+        container: '.menu',
+        loop: true,
+        //mode: 'gallery',
+        items: 1,
+        slideBy: 'page',
+        nav: false,    
+        controls: true,
+        autoplay: false,
+        speed: 400,
+        autoplayButtonOutput: false,
+        mouseDrag: false,
+        lazyload: true,
+        controlsContainer: "#menu-controls"
       }
     }
 
