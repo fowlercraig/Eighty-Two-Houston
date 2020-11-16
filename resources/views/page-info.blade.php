@@ -25,7 +25,7 @@
             @include('partials.social-menu')
           </div>
           <div class="lg:col-span-3 prose lg:prose-lg xl:prose-xl max-w-none">
-            <p class="mb-2 text-center md:text-left">
+            <p class="mb-2">
               <?php the_field('address'); ?>
             </p>
 
@@ -35,7 +35,7 @@
             </div>
             @endif
             @if($imageid)
-            <div class="relative w-3/4 md:w-full mx-auto md:mr-auto">
+            <div class="relative w-3/4 md:w-full">
               <?php echo wp_get_attachment_image( $imageid, $imagesize, '', array( 'class' => 'w-full h-full object-cover object-center relative' ) ) ?>
             </div>
             @endif
