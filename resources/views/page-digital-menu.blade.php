@@ -9,7 +9,7 @@
 
 <div id="menu">
   @foreach ($images as $image)
-    <div class="h-screen relative">
+    <div class="h-mh md:h-screen relative">
       @php echo wp_get_attachment_image( $image, 'large', '', array( 'class' => 'h-full w-full object-contain' ) ) @endphp
     </div>
   @endforeach

@@ -69,7 +69,10 @@ module.exports = {
         sans: ['Barlow', ...defaultTheme.fontFamily.sans],
       },
       spacing: {
-        'divider': '2px'
+        'divider': '2px',
+      },
+      height: {
+        'mh': 'calc(var(--vh, 1vh) * 100)'
       },
       maxHeight: {
         '32': '200px',
