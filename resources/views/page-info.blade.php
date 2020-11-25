@@ -36,7 +36,9 @@
             @endif
             @if($imageid)
             <div class="relative w-3/4 md:w-full">
-              <?php echo wp_get_attachment_image( $imageid, $imagesize, '', array( 'class' => 'w-full h-full object-cover object-center relative' ) ) ?>
+              <a href="{!! get_field('maplink')['url'] !!}" target="{!! get_field('maplink')['target'] !!}">
+                {!! wp_get_attachment_image( $imageid, $imagesize, '', array( 'class' => 'w-full h-full object-cover object-center relative' ) ) !!}
+              </a>
             </div>
             @endif
 
